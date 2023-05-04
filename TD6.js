@@ -13,8 +13,8 @@ window.addEventListener("DOMContentLoaded",function(){
   btn.style.zIndex=-1
    })
    send.addEventListener("click",function(){
-    form.style.opacity=0.2;
-    form.style.filter="blur(3px)"
+    form.style.opacity=0.1;
+    form.style.filter="blur(4px)"
   btn.style.opacity=1;
   btn.style.zIndex=1
     var userName=name.value;
@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded",function(){
    setTimeout(function(){
    if(userLastName!=""&&userLastName!=""&&userEmail!=""){
     alert("Name:"+userName+"\nlast name:"+userLastName+"\nEmail:"+userEmail);
-    
+    name.value="";
    }
    
    },3)
